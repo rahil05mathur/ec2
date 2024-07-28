@@ -1,11 +1,14 @@
 ---
 - name: name: start an instance with a public IP address 
   amazon.aws.ec2_instance:
-    name: "public-compute-instance"
+    name: "ansible-instance_public"
     key_name: "prod-ssh-key"
-    vpc_subnet_id: subnet-5ca1ab1e
+    vpc_subnet_id: subnet-08aaefe8716bd1d92
     instance_type: t2.micro
+    region: ap-south-1
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{ aws_secret_key }}"
     security_group: jenkins-SG
     network:
       assign_public_ip: true
-    image_id: ami-123456
+    image_id: 
