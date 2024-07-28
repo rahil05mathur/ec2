@@ -4,10 +4,10 @@
     name: "ansible-instance_public"
     # key_name: "prod-ssh-key"
     # vpc_subnet_id: subnet-08aaefe8716bd1d92
-    instance_type: t2.micro
+    instance_type: t2.micro 
     region: ap-south-1
-    aws_access_key: "{{ ec-2_access_key }}"
-    aws_secret_key: "{{ ec-2_secret_key }}"
+    aws_access_key: "{{ ec2_access_key }}"
+    aws_secret_key: "{{ ec2_secret_key }}"
     security_group: jenkins-SG
     network:
       assign_public_ip: true
