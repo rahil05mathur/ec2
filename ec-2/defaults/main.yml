@@ -1,2 +1,3 @@
 ---
 # defaults file for ec-2
+type: "t2.micro"
