@@ -1,9 +1,6 @@
----
 - name: start an instance with a public IP address
-  hosts: localhost
-  tasks:
-   - name: "ansible-instance_public"
      amazon.aws.ec2_instance:
+       name: "ansible-instance_public"
        instance_type: t2.micro 
        region: ap-south-1
        aws_access_key: "{{ ec2_access_key }}"
