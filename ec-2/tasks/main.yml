@@ -1,5 +1,6 @@
 ---
-- name: start an instance with a public IP address 
+- name: start an instance with a public IP address
+  tasks:
   amazon.aws.ec2_instance:
     name: "ansible-instance_public"
     # key_name: "prod-ssh-key"
